@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -9,7 +10,6 @@ const Navbar = () => {
             <div className="row">
               <div className="col-xl-6 col-lg-5 align-self-center">
                 <div className="logo text-md-left text-center">
-                  {/* <!-- <a className="main-logo" href="index.html"><img src="assets/img/logo.png" alt="img"></a> --> */}
                 </div>
               </div>
             </div>
@@ -20,7 +20,6 @@ const Navbar = () => {
           <div className="container nav-container">
             <div className="responsive-mobile-menu">
               <div className="logo d-lg-none d-block">
-                {/* <!-- <a className="main-logo" href="index.html"><img src="assets/img/logo.png" alt="img"></a> --> */}
               </div>
               <button
                 className="menu toggle-btn d-block d-lg-none"
@@ -40,24 +39,24 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="nextpage_main_menu">
               <ul className="navbar-nav menu-open">
                 <li className="current-menu-item">
-                  <a href="#banner">Accueil</a>
+                <Link href="/" >Accueil</Link>
                 </li>
                 <li className="current-menu-item">
-                  <a href="#trending">BLog</a>
+                <Link href="/blog" >Blog</Link>
                 </li>
                 <li className="current-menu-item">
-                  <a href="#latest">LIST</a>
+                <Link href="/utilisateurs">Membre</Link>
                 </li>
               </ul>
             </div>
-            <div className="nav-right-part nav-right-part-desktop">
+            {/* <div className="nav-right-part nav-right-part-desktop">
               <div className="menu-search-inner">
                 <input type="text" placeholder="Search ..." />
                 <button type="submit" className="submit-btn">
                   <i className="fa fa-search"></i>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>

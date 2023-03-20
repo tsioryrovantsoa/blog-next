@@ -1,7 +1,10 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 
-const Banner = () => {
+const Banner = ({image,data}) => {
+
+// console.log(`assets/img/banner/{${image}}`)
+
   return (
     <>
     <div className="banner-area banner-inner-1 bg-black" id="banner">
@@ -10,7 +13,7 @@ const Banner = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="thumb after-left-top">
-                            <img src="assets/img/banner/1.png" alt="img" />
+                            <img src={`/assets/img/${image}`} alt="img" />
                         </div>
                     </div>
                     <div className="col-lg-6 align-self-center">
@@ -21,8 +24,8 @@ const Banner = () => {
                                     <li className="date"><i className="fa fa-clock-o"></i>20.03.2022</li>
                                 </ul>
                             </div>
-                            <h2>Bienvenue sur Code.io</h2>
-                            <p>Blog communautaire Developpement Web. </p>
+                            <h2>{data.title}</h2>
+                            <p>{data.body}</p>
                             <Link href="/blog" className="btn btn-blue">Voir le Blog</Link><br />
                             <Link href="/utilisateurs" className="btn btn-blue">Voir les membres</Link>
                         </div>
