@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link'
 
 const Banner = () => {
   return (
@@ -16,13 +17,14 @@ const Banner = () => {
                         <div className="banner-details mt-4 mt-lg-0">
                             <div className="post-meta-single">
                                 <ul>
-                                    <li><a className="tag-base tag-blue" href="#">Tech</a></li>
-                                    <li className="date"><i className="fa fa-clock-o"></i>08.22.2020</li>
+                                    <li><a className="tag-base tag-blue" href="#">BLOG</a></li>
+                                    <li className="date"><i className="fa fa-clock-o"></i>20.03.2022</li>
                                 </ul>
                             </div>
-                            <h2>ReZoom outage left some people locked out.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <a className="btn btn-blue" href="#">Read More</a>
+                            <h2>Bienvenue sur Code.io</h2>
+                            <p>Blog communautaire Developpement Web. </p>
+                            <Link href="/blog" className="btn btn-blue">Voir le Blog</Link><br />
+                            <Link href="/utilisateurs" className="btn btn-blue">Voir les membres</Link>
                         </div>
                     </div>
                 </div>

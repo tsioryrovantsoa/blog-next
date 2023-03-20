@@ -2,16 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Banner from '@/components/Banner'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <div className="pd-top-80 pd-bottom-50" id="grid">
+        <Banner/> 
+      {/* <div className="pd-top-80 pd-bottom-50" id="grid">
         <div className="container">
             <div className="section-title">
-                <h6 className="title">Trending News</h6>
+                <h6 className="title">Accueil</h6>
             </div>
             <div className="row">
                 <div className="col-lg-3 col-sm-6">
@@ -80,7 +82,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     </>
   )
 }

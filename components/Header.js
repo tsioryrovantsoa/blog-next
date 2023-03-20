@@ -18,7 +18,6 @@ const Header = () => {
       </div>
       <div className="body-overlay" id="body-overlay"></div>
       <Navbar/>
-    <Banner/> 
     </>
   );
 };
